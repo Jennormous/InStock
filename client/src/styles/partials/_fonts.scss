@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/Fonts/Avenir.otf);
+}
+
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url(../assets/Fonts/AvenirBold.otf);
+}
+
+@font-face {
+  font-family: "Avenir-Demi";
+  src: url(../assets/Fonts/AvenirDemi.otf);
+}
+
+// !-----------------------------------------------------------------------------------
+// - Above: Define font-family for Avenir fonts ---------------------------------------
+// !-----------------------------------------------------------------------------------
+// - Below: Set base classes for easy implementation during the construction process. -
+// !-----------------------------------------------------------------------------------
+
+.header {
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-family: "Avenir-Bold", sans-serif;
+  color: $black;
+  @include tablet {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  &--hero {
+    @include desktop {
+      font-size: 60px;
+      line-height: 68px;
+    }
+  }
+  &--h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subheader {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Avenir-Demi", sans-serif;
+  color: $black;
+  @include tablet {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.date {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Avenir", sans-serif;
+  font-weight: 300;
+  color: $silver;
+  @include tablet {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.para {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Avenir", sans-serif;
+  color: $black;
+  @include tablet {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.list {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Avenir", sans-serif;
+  color: $black;
+  @include tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Avenir", sans-serif;
+  color: $silver;
+}
