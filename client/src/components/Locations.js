@@ -1,3 +1,4 @@
+import React, {Component} from "react";
 import arRight from "../assets/Icons/SVG/Icon-arrow-right.svg";
 
 export default class Locations extends Component {
