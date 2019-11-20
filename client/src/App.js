@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./styles/main.css";
 import Header from "./components/Header";
 import Inventory from "./components/Inventory";
+import Locations from "./components/Locations";
 
 export default class App extends Component {
   constructor(props) {
@@ -146,6 +147,7 @@ export default class App extends Component {
       <div>
         <Header />
         <Inventory warehouses={this.state.warehouses} />
+        <Locations locations={this.state.locations} />
       </div>
     );
   }
