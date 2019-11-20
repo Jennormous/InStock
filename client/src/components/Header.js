@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/Logo/Logo-instock.svg";
 
 export default class Header extends Component {
@@ -7,8 +8,12 @@ export default class Header extends Component {
       <header className="header header__wrapper">
         <img className="header__img" src={logo} alt="logo" />
         <ul className="header__list">
-          <li className="header__list--item active">Inventory</li>
-          <li className="header__list--item">Locations</li>
+          <Link to="/">
+            <li className="header__list--item active">Inventory</li>{" "}
+          </Link>
+          <Link to="/locations">
+            <li className="header__list--item">Locations</li>
+          </Link>
         </ul>
       </header>
     );
