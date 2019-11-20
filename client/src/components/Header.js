@@ -7,7 +7,7 @@ export default class Header extends Component {
       <header className="header header__wrapper">
         <img className="header__img" src={logo} alt="logo" />
         <ul className="header__list">
-          <li className="header__list--item">Inventory</li>
+          <li className="header__list--item active">Inventory</li>
           <li className="header__list--item">Locations</li>
         </ul>
       </header>
