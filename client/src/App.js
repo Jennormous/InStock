@@ -22,21 +22,24 @@ export default class App extends Component {
               description: "Its a beyblade what more do you need to know",
               ordered: "12/12/12",
               quantity: "1,000,000",
-              id: "11"
+              id: "11",
+              status: "In Stock"
             },
             {
               product: "Big gun",
               description: "its really big",
               ordered: "12/1/19",
               quantity: "1",
-              id: "12"
+              id: "12",
+              status: "In Stock"
             },
             {
               product: "Old man and the Sea",
               description: "decent book but we have way too many of them",
               ordered: "1/22/99",
               quantity: "12,000,000",
-              id: "13"
+              id: "13",
+              status: "In Stock"
             }
           ]
         },
@@ -54,21 +57,24 @@ export default class App extends Component {
               description: "Fluffy hyper doggo",
               ordered: "3/14/18",
               quantity: "10",
-              id: "21"
+              id: "21",
+              status: "In Stock"
             },
             {
               product: "Dolphin",
               description: "We will not sell to Seaworld",
               ordered: "7/4/18",
               quantity: "14",
-              id: "22"
+              id: "22",
+              status: "In Stock"
             },
             {
               product: "really shap kives",
               description: "its very sharp and we have a lot watch out Alyssa ",
               ordered: "11/19/19",
               quantity: "12,000,000",
-              id: "23"
+              id: "23",
+              status: "In Stock"
             }
           ]
         },
@@ -86,7 +92,8 @@ export default class App extends Component {
               description: "its not as bad as it sounds just plug your nose",
               ordered: "10/1/11",
               quantity: "7.5",
-              id: "31"
+              id: "31",
+              status: "In Stock"
             },
             {
               product: "Sombody's Nan",
@@ -94,14 +101,16 @@ export default class App extends Component {
                 "She's real sweet just needs a good bath and she's good as new",
               ordered: "8/4/19",
               quantity: "1",
-              id: "32"
+              id: "32",
+              status: "In Stock"
             },
             {
               product: "Nike",
               description: "They brand new come get em",
               ordered: "3/25/10",
               quantity: "12,000,000",
-              id: "33"
+              id: "33",
+              status: "In Stock"
             }
           ]
         }
