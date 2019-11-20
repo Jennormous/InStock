@@ -1,4 +1,3 @@
-  
 import React, { Component } from "react";
 
 export default class Inventory extends Component {
@@ -21,4 +20,8 @@ export default class Inventory extends Component {
       </div>
     );
   }
+
 }
+
+
+

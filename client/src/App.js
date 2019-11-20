@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import "./styles/main.css";
 import Header from "./components/Header";
 import Inventory from "./components/Inventory";
@@ -141,6 +141,7 @@ export default class App extends Component {
       ]
     };
   }
+
   render() {
     return (
       <div>
@@ -148,6 +149,6 @@ export default class App extends Component {
         <Inventory warehouses={this.state.warehouses} />
         <Locations locations={this.state.locations} />
       </div>
-    )
+    );
   }
 }
