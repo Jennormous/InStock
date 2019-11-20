@@ -193,6 +193,12 @@
       flex-wrap: wrap;
 }
 
+@media only screen and (min-width: 768px) {
+  .product__wrapper {
+    margin: 0 1.5rem;
+  }
+}
+
 .product__headwrap {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -202,6 +208,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .product__headwrap {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
 }
 
 .product__backicon {
@@ -222,6 +235,28 @@
   background-color: #69b01b;
 }
 
+@media only screen and (min-width: 768px) {
+  .product__stock {
+    margin: 2rem 0 2rem 1rem;
+  }
+}
+
+.product__textcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .product__textcontainer {
+    padding-top: 2rem;
+    border-top: solid 2px #e1e1e1;
+    border-bottom: solid 2px #e1e1e1;
+  }
+}
+
 .product__textwrap {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -233,6 +268,13 @@
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .product__textwrap {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 .product__texthead {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -241,6 +283,28 @@
 
 .product__textbody {
   margin: 0 0 2rem 0;
+}
+
+.product__description {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.product__categories {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
 }
 
 .product__edit {
@@ -267,6 +331,14 @@
 
 .product__edit:focus {
   outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .product__edit {
+    margin: 2rem 0 2rem auto;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
 }
 
 html,

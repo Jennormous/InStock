@@ -3,12 +3,18 @@
     margin: 0 1rem;
     display: flex;
     flex-wrap: wrap;
+    @include tablet {
+      margin: 0 1.5rem;
+    }
   }
 
   &__headwrap {
     flex-basis: 100%;
     display: flex;
     align-items: center;
+    @include tablet {
+      flex-basis: auto;
+    }
   }
 
   &__backicon {
@@ -27,6 +33,19 @@
     border: none;
     margin-bottom: 2rem;
     background-color: $instock-green;
+    @include tablet {
+      margin: 2rem 0 2rem 1rem;
+    }
+  }
+
+  &__textcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet {
+      padding-top: 2rem;
+      border-top: solid 2px $mercury;
+      border-bottom: solid 2px $mercury;
+    }
   }
 
   &__textwrap {
@@ -34,6 +53,9 @@
     flex-wrap: wrap;
     display: flex;
     margin: 0;
+    @include tablet {
+      flex-basis: 50%;
+    }
   }
 
   &__texthead {
@@ -45,6 +67,20 @@
     margin: 0 0 2rem 0;
   }
 
+  &__description {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+  }
+
+  &__categories {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+  }
+
   &__edit {
     width: 100%;
     height: 3rem;
@@ -54,15 +90,23 @@
     border-radius: 6px;
     transition: 0.1s;
     margin-bottom: 1rem;
+
     &:hover {
       transition: 0.1s;
       background-color: $instock-hover;
     }
+
     &:active {
       background-color: $instock-dark-blue;
     }
+
     &:focus {
       outline: none;
+    }
+
+    @include tablet {
+      margin: 2rem 0 2rem auto;
+      flex-basis: 20%;
     }
   }
 }
