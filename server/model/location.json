@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "warehouse": "Bowen's Place",
+    "location": "Nun of ya bizniz",
+    "contact": "George dubyuh",
+    "title": "Prezdent",
+    "phone": "1(800) plz-vote",
+    "email": "george@texas.com",
+    "categories": "Toys, Guns, Chew, Books"
+  },
+  {
+    "id": "2",
+    "warehouse": "Jen's goodies",
+    "location": "Right down the street",
+    "contact": "Daddy Mattias",
+    "title": "Sugar Baby",
+    "phone": "1(800) shiba",
+    "email": "jensad@gmail.com",
+    "categories": "Dogs, all aminals, knives, gin & tonics"
+  },
+  {
+    "id": "3",
+    "warehouse": "Samuel's Dump",
+    "location": "the dump",
+    "contact": "Codee Palmer",
+    "title": "Garbage Boy",
+    "phone": "1(800) garbage",
+    "email": "garbage@junkmail.com",
+    "categories": "Trash, Grandma, Shoes, semi clean socks"
+  }
+]
