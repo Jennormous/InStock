@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import arRight from "../assets/Icons/SVG/Icon-arrow-right.svg";
 
 export default class Locations extends Component {
@@ -15,7 +16,9 @@ export default class Locations extends Component {
                   {location.address}, {location.city}, {location.province}
                 </h4>
               </div>
-              <img className="locations__loc--img" src={arRight} />
+              <Link to="/warehouse">
+                <img className="locations__loc--img" src={arRight} />
+              </Link>
             </div>
             <div className="locations__person">
               <h3 className="para">{location.contact}</h3>
