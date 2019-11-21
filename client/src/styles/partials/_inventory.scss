@@ -3,6 +3,36 @@
   @include tablet {
     display: contents;
   }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__item {
+    width: 248px;
+  }
+
+  &__order {
+    width: 124px;
+  }
+
+  &__location {
+    width: 124px;
+  }
+
+  &__quantity {
+    width: 124px;
+  }
+
+  &__status {
+    width: 124px;
+  }
+
+  &__dots {
+    @include tablet {
+      align-self: flex-start;
+    }
+  }
 }
 
 .inventory {
@@ -42,6 +72,7 @@
   margin-bottom: 1.5rem;
   border-bottom: solid 2px $mercury;
   @include tablet {
+    padding: 0;
   }
 
   &__item {
@@ -63,9 +94,59 @@
     &--tag {
       flex-basis: 100%;
       margin: 0 0 1rem 0;
+      @include tablet {
+        display: none;
+      }
     }
     &--value {
       margin: 0 0 1.5rem 0;
+      @include tablet {
+        flex-basis: 100%;
+        margin-top: 1.8rem;
+      }
     }
+  }
+}
+
+#product {
+  @include tablet {
+    flex-basis: 238px;
+  }
+
+  &__name {
+    @include tablet {
+      display: contents;
+      flex-basis: 238px;
+    }
+  }
+
+  &__description {
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+}
+
+#lastorder {
+  @include tablet {
+    flex-basis: 122px;
+  }
+}
+
+#location {
+  @include tablet {
+    flex-basis: 118px;
+  }
+}
+
+#quantity {
+  @include tablet {
+    flex-basis: 120px;
+  }
+}
+
+#status {
+  @include tablet {
+    flex-basis: 95px;
   }
 }

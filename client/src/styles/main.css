@@ -436,6 +436,39 @@
   }
 }
 
+.largetags__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.largetags__item {
+  width: 248px;
+}
+
+.largetags__order {
+  width: 124px;
+}
+
+.largetags__location {
+  width: 124px;
+}
+
+.largetags__quantity {
+  width: 124px;
+}
+
+.largetags__status {
+  width: 124px;
+}
+
+@media only screen and (min-width: 768px) {
+  .largetags__dots {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 .inventory {
   margin: 0 1rem;
 }
@@ -491,6 +524,12 @@
   border-bottom: solid 2px #e1e1e1;
 }
 
+@media only screen and (min-width: 768px) {
+  .mobiletags {
+    padding: 0;
+  }
+}
+
 .mobiletags__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,8 +564,71 @@
   margin: 0 0 1rem 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .mobiletags__subsec--tag {
+    display: none;
+  }
+}
+
 .mobiletags__subsec--value {
   margin: 0 0 1.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobiletags__subsec--value {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #product {
+    -ms-flex-preferred-size: 238px;
+        flex-basis: 238px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #product__name {
+    display: contents;
+    -ms-flex-preferred-size: 238px;
+        flex-basis: 238px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #product__description {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #lastorder {
+    -ms-flex-preferred-size: 122px;
+        flex-basis: 122px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #location {
+    -ms-flex-preferred-size: 118px;
+        flex-basis: 118px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #quantity {
+    -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #status {
+    -ms-flex-preferred-size: 95px;
+        flex-basis: 95px;
+  }
 }
 
 .locations {
