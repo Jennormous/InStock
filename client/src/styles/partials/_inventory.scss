@@ -6,31 +6,78 @@
 
   &__wrapper {
     display: flex;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__item {
-    width: 248px;
+    flex-basis: 15.5rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+    @include desktop {
+      flex-basis: 23rem;
+    }
   }
 
   &__order {
-    width: 124px;
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 11.5rem;
+    }
   }
 
   &__location {
-    width: 124px;
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 11.5rem;
+    }
   }
 
   &__quantity {
-    width: 124px;
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 11.5rem;
+    }
   }
 
   &__status {
-    width: 124px;
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 11.5rem;
+    }
   }
 
   &__dots {
     @include tablet {
       align-self: flex-start;
+    }
+
+    @include desktop {
+      align-self: center;
     }
   }
 }
@@ -46,22 +93,37 @@
   &__top-section {
     display: flex;
     flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+    }
     &--title {
       margin: 2rem 0 1rem 0;
+      @include desktop {
+        flex-basis: auto;
+        margin: 3rem 0 3rem 0;
+      }
     }
+
     &--search {
-      height: 48px;
+      height: 3rem;
       margin-bottom: 2rem;
       border-radius: 4px;
       border: 1px solid $mercury;
       background-color: $alabaster;
       background-image: url("../assets/Icons/SVG/Icon-search.svg");
       background-repeat: no-repeat;
-      background-position: 12px 16px;
-      background-size: 16px;
-      text-indent: 32px;
+      background-position: 0.75rem 1rem;
+      background-size: 1rem;
+      text-indent: 2rem;
       width: 90%;
+      @include desktop {
+        width: 15.75rem;
+        margin: 2.5rem 0 0 0;
+      }
     }
+  }
+  &__inputwrap {
+    margin-left: auto;
   }
 }
 
@@ -73,6 +135,12 @@
   border-bottom: solid 2px $mercury;
   @include tablet {
     padding: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 5rem;
   }
 
   &__item {
@@ -104,19 +172,32 @@
         flex-basis: 100%;
         margin-top: 1.8rem;
       }
+
+      @include desktop {
+        margin: 0;
+        align-self: center;
+      }
     }
   }
 }
 
 #product {
   @include tablet {
-    flex-basis: 238px;
+    flex-basis: 14.875rem;
+  }
+
+  @include desktop {
+    flex-basis: 23rem;
   }
 
   &__name {
     @include tablet {
       display: contents;
-      flex-basis: 238px;
+      flex-basis: 14.875rem;
+    }
+
+    @include desktop {
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -129,24 +210,40 @@
 
 #lastorder {
   @include tablet {
-    flex-basis: 122px;
+    flex-basis: 7.625rem;
+  }
+
+  @include desktop {
+    flex-basis: 11.5rem;
   }
 }
 
 #location {
   @include tablet {
-    flex-basis: 118px;
+    flex-basis: 110.5rem;
+  }
+
+  @include desktop {
+    flex-basis: 11.5rem;
   }
 }
 
 #quantity {
   @include tablet {
-    flex-basis: 120px;
+    flex-basis: 7.5rem;
+  }
+
+  @include desktop {
+    flex-basis: 11.5rem;
   }
 }
 
 #status {
   @include tablet {
-    flex-basis: 95px;
+    flex-basis: 5.9375rem;
+  }
+
+  @include desktop {
+    flex-basis: 10.0625rem;
   }
 }

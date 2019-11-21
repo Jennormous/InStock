@@ -67,7 +67,7 @@ export default class Inventory extends Component {
       <div className="inventory">
         <div className="inventory__top-section">
           <h1 className="texthead inventory__top-section--title">Inventory</h1>
-          <form onKeyUp>
+          <form className="inventory__inputwrap" onKeyUp>
             <input
               type="text"
               name="searchbar"
@@ -77,7 +77,7 @@ export default class Inventory extends Component {
           </form>
         </div>
         <div>
-          <div className="largetags__wrapper">
+          <div className="largetags largetags__wrapper">
             <p className="label largetags__item">ITEM</p>
             <p className="label largetags__order">LAST ORDERED</p>
             <p className="label largetags__location">LOCATION</p>
