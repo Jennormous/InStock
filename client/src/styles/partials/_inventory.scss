@@ -74,6 +74,7 @@
   &__dots {
     @include tablet {
       align-self: flex-start;
+      margin-top: 2rem;
     }
 
     @include desktop {
@@ -202,7 +203,8 @@
   }
 
   @include desktop {
-    flex-basis: 23rem;
+    flex-basis: 22.5rem;
+    padding-right: 1rem;
   }
 
   &__name {
@@ -229,17 +231,17 @@
   }
 
   @include desktop {
-    flex-basis: 11.5rem;
+    flex-basis: 11.25rem;
   }
 }
 
 #location {
   @include tablet {
-    flex-basis: 110.5rem;
+    flex-basis: 7.5rem;
   }
 
   @include desktop {
-    flex-basis: 11.5rem;
+    flex-basis: 11.25rem;
   }
 }
 
@@ -249,7 +251,7 @@
   }
 
   @include desktop {
-    flex-basis: 11.5rem;
+    flex-basis: 11.25rem;
   }
 }
 
