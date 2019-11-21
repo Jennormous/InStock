@@ -11,7 +11,9 @@ export default class Locations extends Component {
             <div className="locations__loc">
               <div className="locations__loc--text">
                 <h3 className="subheader">{location.warehouse}</h3>
-                <h4 className="para">{location.location}</h4>
+                <h4 className="para">
+                  {location.address}, {location.city}, {location.province}
+                </h4>
               </div>
               <img className="locations__loc--img" src={arRight} />
             </div>
