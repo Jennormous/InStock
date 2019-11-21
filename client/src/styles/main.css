@@ -238,5 +238,8 @@ body {
   background-position: 12px 16px;
   background-size: 16px;
   text-indent: 32px;
+  width: -webkit-fill-available;
+  width: fill-available;
+  width: -moz-available;
 }
 /*# sourceMappingURL=main.css.map */
