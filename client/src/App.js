@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./styles/main.css";
 import Header from "./components/Header";
+import Product from "./components/Product";
 import Inventory from "./components/Inventory";
 import Locations from "./components/Locations";
 import { Route, Switch } from "react-router-dom";
@@ -147,6 +148,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+
         <Switch>
           <Route
             path="/"
@@ -159,6 +161,7 @@ export default class App extends Component {
             render={props => <Locations locations={this.state.locations} />}
           />
         </Switch>
+
       </div>
     );
   }

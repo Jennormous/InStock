@@ -2,6 +2,7 @@
 @import "./partials/colors";
 @import "./partials/fonts";
 @import "./partials/header";
+@import "./partials/product";
 
 html,
 body {
@@ -9,7 +10,7 @@ body {
   padding: 0;
   font-family: "Avenir", sans-serif;
   line-height: 1.8rem;
-  color: grey;
+  color: $black;
   height: 100vh;
   box-sizing: border-box;
   overflow-x: hidden;

@@ -1,0 +1,157 @@
+.product {
+  &__wrapper {
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet {
+      margin: 0 1.5rem;
+    }
+    @include desktop {
+      margin: 0 180px;
+    }
+  }
+
+  &__headwrap {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    @include tablet {
+      flex-basis: auto;
+    }
+  }
+
+  &__backicon {
+    margin: 1rem 1rem 1.275rem 0;
+    @include desktop {
+      margin: 1.5rem 1rem 1.275rem 0;
+    }
+  }
+
+  &__name {
+    margin: 1rem 0;
+    @include desktop {
+      margin: 3rem 1.5rem 2.5rem 0;
+    }
+  }
+
+  &__stock {
+    width: 88px;
+    height: 24px;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    margin-bottom: 2rem;
+    background-color: $instock-green;
+    &:focus {
+      outline: none;
+    }
+    @include tablet {
+      margin: 2rem 0 2rem 1rem;
+    }
+    @include desktop {
+      margin: 3.5rem 0 0 0;
+    }
+  }
+
+  &__textcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet {
+      padding-top: 2rem;
+      border-top: solid 2px $mercury;
+      border-bottom: solid 2px $mercury;
+    }
+    @include desktop {
+      padding-top: 3rem;
+    }
+  }
+
+  &__textwrap {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    @include tablet {
+      flex-basis: 50%;
+    }
+  }
+
+  &__texthead {
+    flex-basis: 100%;
+    margin: 0 0 1rem 0;
+    @include desktop {
+      margin: 0 0 1.5rem 0;
+    }
+  }
+
+  &__textbody {
+    margin: 0 0 2rem 0;
+    @include desktop {
+      margin: 0 0 3.5rem 0;
+    }
+  }
+
+  &__catbody {
+    margin: 0 0 2rem 0;
+    @include desktop {
+      margin: 0 0 3rem 0;
+    }
+  }
+
+  &__description {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    @include desktop {
+      flex-basis: 50%;
+      margin-bottom: auto;
+    }
+  }
+
+  &__notdescription {
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop {
+      flex-basis: 50%;
+      padding-left: 2rem;
+    }
+  }
+
+  &__categories {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+  }
+
+  &__edit {
+    width: 100%;
+    height: 3rem;
+    background-color: $instock-blue;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    transition: 0.1s;
+    margin-bottom: 1rem;
+
+    &:hover {
+      transition: 0.1s;
+      background-color: $instock-hover;
+    }
+
+    &:active {
+      background-color: $instock-dark-blue;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @include tablet {
+      margin: 2.5rem 0 2.5rem auto;
+      flex-basis: 10rem;
+      align-self: flex-end;
+    }
+  }
+}
