@@ -430,8 +430,26 @@
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .largetags {
+    display: contents;
+  }
+}
+
 .inventory {
   margin: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .inventory {
+    margin: 0 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .inventory {
+    margin: 0 11.25rem;
+  }
 }
 
 .inventory__top-section {
@@ -479,6 +497,12 @@
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobiletags__item {
+    display: none;
+  }
 }
 
 .mobiletags__vertdots {
