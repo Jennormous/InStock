@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./styles/main.css";
-import Header from "./components/Header";
-import Product from "./components/inventory/ProductSum";
+import Header from "./components/Header"
+import Product from "./components/inventory/ProductSum"
 import Inventory from "./components/Inventory";
 import Locations from "./components/Locations";
 import { Route, Switch } from "react-router-dom";
@@ -167,7 +167,12 @@ export default class App extends Component {
 
           <Route
             path="/locations"
-            render={props => <Locations locations={this.state.locations} />}
+            render={props => (
+              <Locations
+                locations={this.state.locations}
+                warehouses={this.state.warehouses}
+              />
+            )}
           />
         </Switch>
       </div>
