@@ -3,16 +3,16 @@
 }
 
 .inventory {
-  margin: 32px 5%;
+  margin: 0 1rem;
   &__top-section {
     display: flex;
     flex-direction: column;
     &--title {
-      margin-bottom: 16px;
+      margin: 2rem 0 1rem 0;
     }
     &--search {
       height: 48px;
-      margin-bottom: 8px;
+      margin-bottom: 2rem;
       border-radius: 4px;
       border: 1px solid $mercury;
       background-color: $alabaster;
@@ -21,9 +21,37 @@
       background-position: 12px 16px;
       background-size: 16px;
       text-indent: 32px;
-      width: -webkit-fill-available;
-      width: fill-available;
-      width: -moz-available;
+      width: 90%;
+    }
+  }
+}
+
+.mobiletags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: solid 2px $mercury;
+
+  &__item {
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  &__vertdots {
+    margin-left: auto;
+  }
+
+  &__subsec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    &--tag {
+      flex-basis: 100%;
+      margin: 0 0 1rem 0;
+    }
+    &--value {
+      margin: 0 0 1.5rem 0;
     }
   }
 }

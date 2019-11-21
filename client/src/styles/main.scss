@@ -3,6 +3,7 @@
 @import "./partials/fonts";
 @import "./partials/header";
 @import "./partials/product";
+@import "./partials/inventory";
 
 html,
 body {
@@ -21,5 +22,3 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
-@import "./partials/inventory";
