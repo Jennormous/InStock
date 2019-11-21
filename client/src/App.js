@@ -16,7 +16,7 @@ export default class App extends Component {
           id: "1",
           warehouse: "Bowen's Place",
           country: "Canada",
-          provence: "BC",
+          province: "BC",
           city: "Vancouver",
           postal: "V6J 7K8",
           address: "123 Main street",
@@ -51,7 +51,7 @@ export default class App extends Component {
           id: "2",
           warehouse: "Jen's goodies",
           country: "Canada",
-          provence: "BC",
+          province: "BC",
           city: "Vancouver",
           postal: "V6J 7K8",
           address: "123 Main street",
@@ -86,7 +86,7 @@ export default class App extends Component {
           id: "3",
           warehouse: "Samuel's Dump",
           country: "Canada",
-          provence: "BC",
+          province: "BC",
           city: "Vancouver",
           postal: "V6J 7K8",
           address: "123 Main street",
@@ -189,8 +189,8 @@ export default class App extends Component {
           />
 
           <Route
-            path="/locations/:warehouseID"
-            render={props => <Warehouse warehouses={this.state.warehouses} />}
+            path="/warehouse"
+            render={props => <Warehouse locations={this.state.locations} />}
           />
         </Switch>
       </div>
