@@ -20,4 +20,8 @@ export default class Inventory extends Component {
       </div>
     );
   }
+
 }
+
+
+

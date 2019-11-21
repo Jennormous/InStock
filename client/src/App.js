@@ -3,6 +3,8 @@ import "./styles/main.css";
 import Header from "./components/Header";
 import Product from "./components/Product";
 import Inventory from "./components/Inventory";
+import Locations from "./components/Locations";
+import { Route, Switch } from "react-router-dom";
 
 export default class App extends Component {
   constructor(props) {
@@ -146,6 +148,20 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={props => <Inventory warehouses={this.state.warehouses} />}
+          />
+
+          <Route
+            path="/locations"
+            render={props => <Locations locations={this.state.locations} />}
+          />
+        </Switch>
+
       </div>
     );
   }
