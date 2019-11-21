@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./styles/main.css";
-import Header from "./components/Header"
-import Product from "./components/inventory/ProductSum"
+import Header from "./components/Header";
+//import Product from "./components/inventory/ProductSum";
 import Inventory from "./components/Inventory";
 import Locations from "./components/Locations";
+import Warehouse from "./components/locations/Warehouse";
 import { Route, Switch } from "react-router-dom";
 
 export default class App extends Component {
@@ -185,6 +186,11 @@ export default class App extends Component {
                 warehouses={this.state.warehouses}
               />
             )}
+          />
+
+          <Route
+            path="/locations/:warehouseID"
+            render={props => <Warehouse warehouses={this.state.warehouses} />}
           />
         </Switch>
       </div>
