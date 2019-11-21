@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./styles/main.css";
-import Header from "./components/Header";
+import Header from "./components/Header"
+import Product from "./components/inventory/ProductSum"
 import Inventory from "./components/Inventory";
 import Locations from "./components/Locations";
 import { Route, Switch } from "react-router-dom";

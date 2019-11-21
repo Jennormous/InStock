@@ -9,32 +9,42 @@ export default class Inventory extends Component {
         return products.items.map(function(item) {
           console.log(products);
           return (
-            <div key={item.id}>
-              <div className="mobiletags">
+            <div className="mobiletags" key={item.id}>
+              <div className="mobiletags__item">
                 <p className="label">ITEM</p>
-                <img src={kebab} alt="dots boi" />
+                <img
+                  className="mobiletags__vertdots"
+                  src={kebab}
+                  alt="dots boi"
+                />
               </div>
-              <div>
-                <h3 className="subheader">{item.product}</h3>
-                <p className="para">{item.description}</p>
+              <div className="mobiletags__subsec">
+                <h3 className="mobiletags__subsec--tag subheader">
+                  {item.product}
+                </h3>
+                <p className="mobiletags__subsec--value para">
+                  {item.description}
+                </p>
               </div>
-              <p className="label mobiletags">LAST ORDERED</p>
-              <div>
-                <p className="para">{item.ordered}</p>
+              <div className="mobiletags__subsec">
+                <p className="mobiletags__subsec--tag label">LAST ORDERED</p>
+                <p className="mobiletags__subsec--value para">{item.ordered}</p>
               </div>
-              <p className="label mobiletags">LOCATION</p>
-              <div>
-                <p className="para">
+              <div className="mobiletags__subsec">
+                <p className="mobiletags__subsec--tag label">LOCATION</p>
+                <p className="mobiletags__subsec--value para">
                   {products.city}, {products.country}
                 </p>
               </div>
-              <p className="label mobiletags">QUANTITY</p>
-              <div>
-                <p className="para">{item.quantity}</p>
+              <div className="mobiletags__subsec">
+                <p className="mobiletags__subsec--tag label">QUANTITY</p>
+                <p className="mobiletags__subsec--value para">
+                  {item.quantity}
+                </p>
               </div>
-              <p className="label mobiletags">STATUS</p>
-              <div>
-                <p className="para">{item.status}</p>
+              <div className="mobiletags__subsec">
+                <p className="mobiletags__subsec--tag label">STATUS</p>
+                <p className="mobiletags__subsec--value para">{item.status}</p>
               </div>
               <div className="largetags">
                 <img src={kebab} alt="dots thingy" />
@@ -69,8 +79,4 @@ export default class Inventory extends Component {
       </div>
     );
   }
-
 }
-
-
-

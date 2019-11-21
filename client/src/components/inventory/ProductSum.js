@@ -7,7 +7,7 @@ export default class Product extends Component {
         <div className="product__headwrap">
           <img
             className="product__backicon"
-            src={require("../assets/Icons/SVG/Icon-back-arrow.svg")}
+            src={require("../../assets/Icons/SVG/Icon-back-arrow.svg")}
           />
           <h1 className="product__name texthead">Product Name</h1>
         </div>
