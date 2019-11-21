@@ -146,7 +146,6 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        <Product />
       </div>
     );
   }

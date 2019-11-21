@@ -6,6 +6,9 @@
     @include tablet {
       margin: 0 1.5rem;
     }
+    @include desktop {
+      margin: 0 180px;
+    }
   }
 
   &__headwrap {
@@ -19,22 +22,34 @@
 
   &__backicon {
     margin: 1rem 1rem 1.275rem 0;
+    @include desktop {
+      margin: 1.5rem 1rem 1.275rem 0;
+    }
   }
 
   &__name {
     margin: 1rem 0;
+    @include desktop {
+      margin: 3rem 1.5rem 2.5rem 0;
+    }
   }
 
   &__stock {
-    width: 82px;
+    width: 88px;
     height: 24px;
     border-radius: 3px;
     color: white;
     border: none;
     margin-bottom: 2rem;
     background-color: $instock-green;
+    &:focus {
+      outline: none;
+    }
     @include tablet {
       margin: 2rem 0 2rem 1rem;
+    }
+    @include desktop {
+      margin: 3.5rem 0 0 0;
     }
   }
 
@@ -45,6 +60,9 @@
       padding-top: 2rem;
       border-top: solid 2px $mercury;
       border-bottom: solid 2px $mercury;
+    }
+    @include desktop {
+      padding-top: 3rem;
     }
   }
 
@@ -61,10 +79,23 @@
   &__texthead {
     flex-basis: 100%;
     margin: 0 0 1rem 0;
+    @include desktop {
+      margin: 0 0 1.5rem 0;
+    }
   }
 
   &__textbody {
     margin: 0 0 2rem 0;
+    @include desktop {
+      margin: 0 0 3.5rem 0;
+    }
+  }
+
+  &__catbody {
+    margin: 0 0 2rem 0;
+    @include desktop {
+      margin: 0 0 3rem 0;
+    }
   }
 
   &__description {
@@ -72,6 +103,19 @@
     flex-wrap: wrap;
     display: flex;
     margin: 0;
+    @include desktop {
+      flex-basis: 50%;
+      margin-bottom: auto;
+    }
+  }
+
+  &__notdescription {
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop {
+      flex-basis: 50%;
+      padding-left: 2rem;
+    }
   }
 
   &__categories {
@@ -105,8 +149,9 @@
     }
 
     @include tablet {
-      margin: 2rem 0 2rem auto;
-      flex-basis: 20%;
+      margin: 2.5rem 0 2.5rem auto;
+      flex-basis: 10rem;
+      align-self: flex-end;
     }
   }
 }

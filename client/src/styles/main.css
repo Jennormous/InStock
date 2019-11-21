@@ -199,6 +199,12 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .product__wrapper {
+    margin: 0 180px;
+  }
+}
+
 .product__headwrap {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -221,12 +227,24 @@
   margin: 1rem 1rem 1.275rem 0;
 }
 
+@media only screen and (min-width: 1024px) {
+  .product__backicon {
+    margin: 1.5rem 1rem 1.275rem 0;
+  }
+}
+
 .product__name {
   margin: 1rem 0;
 }
 
+@media only screen and (min-width: 1024px) {
+  .product__name {
+    margin: 3rem 1.5rem 2.5rem 0;
+  }
+}
+
 .product__stock {
-  width: 82px;
+  width: 88px;
   height: 24px;
   border-radius: 3px;
   color: white;
@@ -235,9 +253,19 @@
   background-color: #69b01b;
 }
 
+.product__stock:focus {
+  outline: none;
+}
+
 @media only screen and (min-width: 768px) {
   .product__stock {
     margin: 2rem 0 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .product__stock {
+    margin: 3.5rem 0 0 0;
   }
 }
 
@@ -254,6 +282,12 @@
     padding-top: 2rem;
     border-top: solid 2px #e1e1e1;
     border-bottom: solid 2px #e1e1e1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .product__textcontainer {
+    padding-top: 3rem;
   }
 }
 
@@ -281,8 +315,30 @@
   margin: 0 0 1rem 0;
 }
 
+@media only screen and (min-width: 1024px) {
+  .product__texthead {
+    margin: 0 0 1.5rem 0;
+  }
+}
+
 .product__textbody {
   margin: 0 0 2rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .product__textbody {
+    margin: 0 0 3.5rem 0;
+  }
+}
+
+.product__catbody {
+  margin: 0 0 2rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .product__catbody {
+    margin: 0 0 3rem 0;
+  }
 }
 
 .product__description {
@@ -294,6 +350,30 @@
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .product__description {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: auto;
+  }
+}
+
+.product__notdescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1024px) {
+  .product__notdescription {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 2rem;
+  }
 }
 
 .product__categories {
@@ -335,9 +415,11 @@
 
 @media only screen and (min-width: 768px) {
   .product__edit {
-    margin: 2rem 0 2rem auto;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    margin: 2.5rem 0 2.5rem auto;
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 
