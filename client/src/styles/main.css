@@ -859,6 +859,57 @@
           justify-content: space-between;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.warehouse {
+  margin: 32px 5vw;
+}
+
+.warehouse__subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.warehouse__info {
+  margin-top: 16px;
+}
+
+.warehouse__address {
+  margin-top: 16px;
+}
+
+.warehouse__address--street {
+  margin-top: 16px;
+}
+
+.warehouse__address--other {
+  margin-top: 16px;
+}
+
+.warehouse__contact {
+  margin-top: 16px;
+}
+
+.warehouse__contact--name {
+  margin-top: 16px;
+}
+
+.warehouse__contact-info {
+  margin-top: 16px;
+}
+
 html,
 body {
   margin: 0;
