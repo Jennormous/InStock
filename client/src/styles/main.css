@@ -451,6 +451,13 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .largetags__wrapper {
+    width: 100%;
+    margin-right: 4px;
+  }
+}
+
 .largetags__item {
   -ms-flex-preferred-size: 15.5rem;
       flex-basis: 15.5rem;
@@ -467,8 +474,8 @@
 
 @media only screen and (min-width: 1024px) {
   .largetags__item {
-    -ms-flex-preferred-size: 23rem;
-        flex-basis: 23rem;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 
@@ -487,8 +494,8 @@
 
 @media only screen and (min-width: 1024px) {
   .largetags__order {
-    -ms-flex-preferred-size: 11.5rem;
-        flex-basis: 11.5rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -507,8 +514,8 @@
 
 @media only screen and (min-width: 1024px) {
   .largetags__location {
-    -ms-flex-preferred-size: 11.5rem;
-        flex-basis: 11.5rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -527,8 +534,8 @@
 
 @media only screen and (min-width: 1024px) {
   .largetags__quantity {
-    -ms-flex-preferred-size: 11.5rem;
-        flex-basis: 11.5rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -547,8 +554,8 @@
 
 @media only screen and (min-width: 1024px) {
   .largetags__status {
-    -ms-flex-preferred-size: 11.5rem;
-        flex-basis: 11.5rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -560,7 +567,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .largetags__dots {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -578,7 +585,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .inventory {
     margin: 0 11.25rem;
   }
@@ -594,7 +601,7 @@
           flex-direction: column;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .inventory__top-section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -607,7 +614,7 @@
   margin: 2rem 0 1rem 0;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .inventory__top-section--title {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -629,7 +636,7 @@
   width: 90%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .inventory__top-section--search {
     width: 15.75rem;
     margin: 2.5rem 0 0 0;
@@ -662,6 +669,9 @@
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
     height: 5rem;
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -705,6 +715,13 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .mobiletags__subsec--tag {
+    -ms-flex-preferred-size: 11.25rem;
+        flex-basis: 11.25rem;
+  }
+}
+
 .mobiletags__subsec--value {
   margin: 0 0 1.5rem 0;
 }
@@ -717,7 +734,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .mobiletags__subsec--value {
     margin: 0;
     -ms-flex-item-align: center;
@@ -735,9 +752,8 @@
 
 @media only screen and (min-width: 1024px) {
   #product {
-    -ms-flex-preferred-size: 22.5rem;
-        flex-basis: 22.5rem;
-    padding-right: 1rem;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 
@@ -749,7 +765,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   #product__name {
     margin-bottom: 0.5rem;
   }
@@ -761,6 +777,11 @@
   }
 }
 
+#product__description__desktop {
+  -ms-flex-preferred-size: 23rem;
+      flex-basis: 23rem;
+}
+
 @media only screen and (min-width: 768px) {
   #lastorder {
     -ms-flex-preferred-size: 7.625rem;
@@ -770,8 +791,8 @@
 
 @media only screen and (min-width: 1024px) {
   #lastorder {
-    -ms-flex-preferred-size: 11.25rem;
-        flex-basis: 11.25rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -784,8 +805,8 @@
 
 @media only screen and (min-width: 1024px) {
   #location {
-    -ms-flex-preferred-size: 11.25rem;
-        flex-basis: 11.25rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -798,8 +819,8 @@
 
 @media only screen and (min-width: 1024px) {
   #quantity {
-    -ms-flex-preferred-size: 11.25rem;
-        flex-basis: 11.25rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
@@ -812,8 +833,8 @@
 
 @media only screen and (min-width: 1024px) {
   #status {
-    -ms-flex-preferred-size: 10.0625rem;
-        flex-basis: 10.0625rem;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
