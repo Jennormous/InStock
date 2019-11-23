@@ -601,7 +601,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .inventory {
     margin: 0 11.25rem;
   }
@@ -731,13 +731,6 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .mobiletags__subsec--tag {
-    -ms-flex-preferred-size: 11.25rem;
-        flex-basis: 11.25rem;
-  }
-}
-
 .mobiletags__subsec--value {
   margin: 0 0 1.5rem 0;
 }
@@ -793,9 +786,11 @@
   }
 }
 
-#product__description__desktop {
-  -ms-flex-preferred-size: 23rem;
-      flex-basis: 23rem;
+@media only screen and (min-width: 1024px) {
+  #product__description {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
 }
 
 @media only screen and (min-width: 768px) {

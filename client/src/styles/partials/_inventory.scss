@@ -108,7 +108,7 @@
   @include tablet {
     margin: 0 1.5rem;
   }
-  @include desktop-large {
+  @include desktop {
     margin: 0 11.25rem;
   }
   &__top-section {
@@ -188,10 +188,6 @@
       @include tablet {
         display: none;
       }
-
-      @include desktop-large {
-        flex-basis: 11.25rem;
-      }
     }
     &--value {
       margin: 0 0 1.5rem 0;
@@ -233,8 +229,8 @@
       margin-top: 0;
     }
 
-    &__desktop {
-      flex-basis: 23rem;
+    @include desktop {
+      flex-basis: 80%;
     }
   }
 }
