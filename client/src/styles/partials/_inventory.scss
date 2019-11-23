@@ -88,6 +88,21 @@
   }
 }
 
+.input-modal-btn {
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  top: 85%;
+  left: 75%;
+  background-color: $instock-dark-blue;
+  height: 60px;
+  width: 60px;
+  &--plus {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .inventory {
   margin: 0 1rem;
   @include tablet {

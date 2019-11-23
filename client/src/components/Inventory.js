@@ -1,13 +1,39 @@
 import React, { Component } from "react";
 import kebab from "../assets/Icons/SVG/Icon-kebab-default.svg";
+import plus from "../assets/Icons/SVG/Icon-add.svg";
 
 export default class Inventory extends Component {
+  state = { show: false };
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
+
   render() {
+    const Modal = ({ handleClose, show, children }) => {
+      const showHideClassName = show
+        ? "modal display-block"
+        : "modal display-none";
+
+      return (
+        <div className={showHideClassName}>
+          <section className="modal-main">
+            {children}
+            <button onClick={handleClose}>close</button>
+          </section>
+        </div>
+      );
+    };
+
     const inventory =
       this.props.warehouses &&
       this.props.warehouses.map(products => {
         return products.items.map(function(item) {
-          console.log(products);
+          //   console.log(products);
           return (
             <div className="mobiletags" key={item.id}>
               <div className="mobiletags__item">
@@ -84,6 +110,23 @@ export default class Inventory extends Component {
             <p className="label largetags__quantity">QUANTITY</p>
             <p className="label largetags__status">STATUS</p>
           </div>
+          <Modal show={this.state.show} handleClose={this.hideModal}>
+            <form action="">
+              <h1>hello</h1>
+              <input type="text" />
+            </form>
+          </Modal>
+          <button
+            className="input-modal-btn"
+            type="button"
+            onClick={this.showModal}
+          >
+            <img
+              className="input-modal-btn--plus"
+              src={plus}
+              alt="add product"
+            />
+          </button>
           {inventory}
         </div>
       </div>
