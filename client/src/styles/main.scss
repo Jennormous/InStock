@@ -1,6 +1,11 @@
 @import "./partials/breakpoints";
 @import "./partials/colors";
 @import "./partials/fonts";
+@import "./partials/header";
+@import "./partials/product";
+@import "./partials/inventory";
+@import "./partials/locations";
+@import "./partials/product-modal";
 
 html,
 body {
@@ -19,9 +24,3 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
-@import "./partials/header";
-@import "./partials/product";
-@import "./partials/inventory";
-@import "./partials/locations";
-@import "./partials/product-modal";
