@@ -1,0 +1,105 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.warehouse {
+  margin: 32px 5vw;
+
+  &__subheader {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &--link {
+    }
+
+    &--title {
+    }
+  }
+
+  &__info {
+    margin-top: 16px;
+  }
+
+  &__address {
+    margin-top: 16px;
+    &--street {
+      margin-top: 16px;
+    }
+
+    &--other {
+      margin-top: 16px;
+    }
+  }
+
+  &__contact {
+    margin-top: 16px;
+    &--name {
+      margin-top: 16px;
+    }
+  }
+  &__contact-info {
+    margin-top: 16px;
+  }
+}
+
+// .warehouse {
+//   &__subheader {
+//     &--link {
+//     }
+
+//     &--title {
+//     }
+//   }
+
+//   &__info {
+//   }
+
+//   &__address {
+//     &--street {
+//     }
+
+//     &--other {
+//     }
+//   }
+
+//   &__contact {
+//     &--name {
+//     }
+
+//     &--info {
+//     }
+//   }
+// }
+// .warehouse {
+//   &__subheader {
+//     &--link {
+//     }
+
+//     &--title {
+//     }
+//   }
+
+//   &__info {
+//   }
+
+//   &__address {
+//     &--street {
+//     }
+
+//     &--other {
+//     }
+//   }
+
+//   &__contact {
+//     &--name {
+//     }
+
+//     &--info {
+//     }
+//   }
+// }
