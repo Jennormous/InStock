@@ -26,12 +26,14 @@
         padding-bottom: 16px;
         text-decoration: none;
         color: $silver;
+
+        
+         &:hover {
+          border-bottom: 3px solid $white;
+          color: $white;
+        }
       }
     }
-  }
-  .active {
-    border-bottom: 3px solid $white;
-    color: $white;
   }
 }
 
@@ -63,12 +65,14 @@
         padding-bottom: 16px;
         text-decoration: none;
         color: $silver;
+
+
+        &:hover {
+          border-bottom: 3px solid $white;
+          color: $white;
+        }
       }
     }
-  }
-  .active {
-    border-bottom: 3px solid $white;
-    color: $white;
   }
 }
 
@@ -76,14 +80,6 @@
   .header {
     &__wrapper {
       padding: 0 12.5vw;
-    }
-
-    &__img {
-    }
-
-    &__list {
-      &--item {
-      }
     }
   }
 }
