@@ -782,6 +782,10 @@
   }
 }
 
+#product__name {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   #product__name {
     display: contents;
@@ -909,8 +913,8 @@
           justify-content: space-between;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 h1,
 h2,
 h3,
@@ -960,7 +964,11 @@ p {
 
 .warehouse__contact-info {
   margin-top: 16px;
-=======
+
+}
+
+
+
 .modal {
   position: fixed;
   top: 0;
@@ -987,11 +995,10 @@ p {
 
 .display-none {
   display: none;
->>>>>>> master
+
 }
 
-=======
->>>>>>> master
+
 html,
 body {
   margin: 0;

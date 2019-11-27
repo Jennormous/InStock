@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import kebab from "../assets/Icons/SVG/Icon-kebab-default.svg";
 import plus from "../assets/Icons/SVG/Icon-add.svg";
+import { Link } from "react-router-dom";
 
 export default class Inventory extends Component {
   state = { show: false };
@@ -45,12 +46,18 @@ export default class Inventory extends Component {
                 />
               </div>
               <div id="product" className="mobiletags__subsec">
-                <h3
+                <Link
                   id="product__name"
                   className="mobiletags__subsec--tag subheader"
+                  to={`/product/${item.id}`}
                 >
-                  {item.product}
-                </h3>
+                  <h3
+                    id="product__name"
+                    className="mobiletags__subsec--tag subheader"
+                  >
+                    {item.product}
+                  </h3>
+                </Link>
                 <p
                   id="product__description"
                   className="mobiletags__subsec--value para"
