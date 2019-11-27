@@ -190,7 +190,7 @@ export default class App extends Component {
 
           <Route
             path="/warehouse"
-            render={props => <Warehouse locations={this.state.locations} />}
+            render={props => <Warehouse locations={this.state.locations} warehouses={this.state.warehouses}/>}
           />
         </Switch>
       </div>

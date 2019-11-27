@@ -1,48 +1,44 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import backAr from "../../assets/Icons/SVG/Icon-back-arrow.svg";
+import kebab from "../../assets/Icons/SVG/Icon-kebab-default.svg";
 
 export default class Warehouse extends Component {
   render() {
-    // const warehouseInfo =
-    //   this.props.warehouses &&
-    //   this.props.warehouses.map(function(warehouse) {
-    //     return <div></div>;
-    //   });
     const warehouse = this.props.locations[0];
     return (
-      <div>
-        <div>
-          <Link to="/locations">
+      <div className="warehouse">
+        <div className="warehouse__subheader">
+          <Link className="warehouse__subheader--link" to="/locations">
             <img src={backAr} alt="go back" />
           </Link>
-          <h1>{warehouse.warehouse}</h1>
+          <h1 className="warehouse__subheader--title">{warehouse.warehouse}</h1>
         </div>
-        <div>
-          <div>
-            <h4>Address</h4>
-            <div>
-              <h3>{warehouse.address}</h3>
+        <div className="warehouse__info">
+          <div className="warehouse__address">
+            <h4 className="label">Address</h4>
+            <div className="warehouse__address--street">
+              <h4 className="para">{warehouse.address}</h4>
             </div>
 
-            <div>
-              <h3>
+            <div className="warehouse__address--other">
+              <h4 className="para">
                 {warehouse.city}, {warehouse.province}
-              </h3>
-              <h3>
+              </h4>
+              <h4 className="para">
                 {warehouse.postal}, {warehouse.country}
-              </h3>
+              </h4>
             </div>
           </div>
-          <div>
-            <h4>Contact</h4>
-            <div>
-              <h3>{warehouse.contact}</h3>
-              <h3>{warehouse.title}</h3>
+          <div className="warehouse__contact">
+            <h4 className="label">Contact</h4>
+            <div className="warehouse__contact--name">
+              <h4 className="para">{warehouse.contact}</h4>
+              <h4 className="para">{warehouse.title}</h4>
             </div>
-            <div>
-              <h3>{warehouse.phone}</h3>
-              <h3>{warehouse.email}</h3>
+            <div className="warehouse__contact-info">
+              <h4 className="para">{warehouse.phone}</h4>
+              <h4 className="para">{warehouse.email}</h4>
             </div>
           </div>
         </div>
