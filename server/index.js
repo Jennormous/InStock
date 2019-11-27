@@ -25,7 +25,7 @@ app.get("/product/:id", (req, res, next) => {
   });
 
   let FixedProd = Product.filter(prodElement => prodElement.length > 0);
-  res.send(JSON.stringify(FixedProd));
+  res.json(FixedProd[0][0]);
 });
 
 app.get("/warehouse/:id", (req, res, next) => {

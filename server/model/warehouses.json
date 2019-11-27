@@ -14,7 +14,11 @@
         "ordered": "12/12/12",
         "quantity": "1,000,000",
         "id": "11",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Industry, Anime, Action, Rip",
+        "reference": "JK1011337HF942",
+        "orderedBy": "Mark Saunders",
+        "location": "Toronto, CAN"
       },
       {
         "product": "Big gun",
@@ -22,15 +26,23 @@
         "ordered": "12/1/19",
         "quantity": "1",
         "id": "12",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Fake, Legal, Action, Prop",
+        "reference": "ID5094235JO528",
+        "orderedBy": "Sark Maunders",
+        "location": "Vancouver, CAN"
       },
       {
-        "product": "Old man and the Sea",
+        "product": "Old Man And The Sea",
         "description": "decent book but we have way too many of them",
         "ordered": "1/22/99",
         "quantity": "12,000,000",
         "id": "13",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Literature, Non-Fiction, Yawn, Next",
+        "reference": "ER1015234HF942",
+        "orderedBy": "Bark Flaunders",
+        "location": "Uclulet, CAN"
       }
     ]
   },
@@ -49,7 +61,11 @@
         "ordered": "3/14/18",
         "quantity": "10",
         "id": "21",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Dog, Cute, Fluffy, Dangerous",
+        "reference": "EO5904336HR931",
+        "orderedBy": "Another Dog",
+        "location": "Tofino, CAN"
       },
       {
         "product": "Dolphin",
@@ -57,15 +73,23 @@
         "ordered": "7/4/18",
         "quantity": "14",
         "id": "22",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Local, Moral, Tasty, Seafood",
+        "reference": "JK1011337HF942",
+        "orderedBy": "Not Seaworld",
+        "location": "Orlando, FL"
       },
       {
-        "product": "really shap kives",
-        "description": "its very sharp and we have a lot - watch out Alyssa ",
+        "product": "Really Sharp Knives",
+        "description": "They're very sharp and we have a lot",
         "ordered": "11/19/19",
         "quantity": "12,000,000",
         "id": "23",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Culinary, Tools, Kitchenware, Stabby",
+        "reference": "JK101133842942",
+        "orderedBy": "Jason V.",
+        "location": "Slocan, CAN"
       }
     ]
   },
@@ -79,12 +103,16 @@
     "address": "123 Main street",
     "items": [
       {
-        "product": "Used samich",
+        "product": "Used Sammich",
         "description": "its not as bad as it sounds just plug your nose",
         "ordered": "10/1/11",
         "quantity": "7.5",
         "id": "31",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Food, American, Unsafe, Delete",
+        "reference": "JK101133249312",
+        "orderedBy": "Hungry Man",
+        "location": "Castlegar, CAN"
       },
       {
         "product": "Sombody's Nan",
@@ -92,7 +120,11 @@
         "ordered": "8/4/19",
         "quantity": "1",
         "id": "32",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Sweet, Caring, Generous, Angel",
+        "reference": "JK1011337HF942",
+        "orderedBy": "Macho Man",
+        "location": "Nelson, CAN"
       },
       {
         "product": "Nike",
@@ -100,7 +132,11 @@
         "ordered": "3/25/10",
         "quantity": "12,000,000",
         "id": "33",
-        "status": "In Stock"
+        "status": "In Stock",
+        "categories": "Overhyped, Overpriced, Red, Blue",
+        "reference": "JK1029103HF942",
+        "orderedBy": "Some Kid",
+        "location": "Mississauga, CAN"
       }
     ]
   }

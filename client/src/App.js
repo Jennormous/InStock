@@ -27,10 +27,12 @@ export default class App extends Component {
       console.log(result);
       this.setState({ warehouses: result.data });
     });
-    axios.get("http://localhost:5000/product").then(result => {
-      console.log(result);
-      this.setState({ warehouses: result.data });
-    });
+    // axios
+    //   .get(`http://localhost:5000/product/${this.props.match.params.id}`)
+    //   .then(result => {
+    //     console.log(result);
+    //     this.setState({ products: result.data });
+    //   });
   }
 
   render() {
@@ -65,7 +67,12 @@ export default class App extends Component {
             )}
           />
 
-          <Route path="/product" render={props => <ProductSum />} />
+          <Route
+            path="/product/:id"
+            render={props => (
+              <ProductSum data={this.state.products} {...props} />
+            )}
+          />
         </Switch>
       </div>
     );

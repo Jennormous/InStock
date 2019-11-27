@@ -1,7 +1,28 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 export default class Product extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      products: {}
+    };
+  }
+
+  componentDidMount() {
+    axios
+      .get(`http://localhost:5000/product/${this.props.match.params.id}`)
+      .then(result => {
+        console.log(result.data);
+        this.setState({ products: result.data }, () =>
+          console.log(this.state.products)
+        );
+      });
+  }
+
+  render(props) {
+    console.log(this.props.match.params.id);
     return (
       <div className="product__wrapper">
         <div className="product__headwrap">
@@ -9,44 +30,53 @@ export default class Product extends Component {
             className="product__backicon"
             src={require("../../assets/Icons/SVG/Icon-back-arrow.svg")}
           />
-          <h1 className="product__name texthead">Product Name</h1>
+          <h1 className="product__name texthead">
+            {this.state.products.product}
+          </h1>
         </div>
         <button className="product__stock">In Stock</button>
         <div className="product__textcontainer">
           <div className="product__description">
             <h3 className="product__texthead label">ITEM DESCRIPTION</h3>
             <p className="product__textbody para">
-              Here is a more detailed summary of the product name, it’s uses,
-              industries and possible attributes that could be used to describe
-              the product.
+              {this.state.products.description}
             </p>
           </div>
           <div className="product__notdescription">
             <div className="product__textwrap">
               <h3 className="product__texthead label">ORDERED BY</h3>
-              <p className="product__textbody para">Mark Saunders</p>
+              <p className="product__textbody para">
+                {this.state.products.orderedBy}
+              </p>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">REFERENCE NUMBER</h3>
-              <p className="product__textbody para">JK2020FD7811201</p>
+              <p className="product__textbody para">
+                {this.state.products.reference}
+              </p>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">LAST ORDERED</h3>
-              <p className="product__textbody para">5/24/2018</p>
+              <p className="product__textbody para">
+                {this.state.products.ordered}
+              </p>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">LOCATION</h3>
-              <p className="product__textbody para">Toronto, CAN</p>
+              <p className="product__textbody para">
+                {this.state.products.location}
+              </p>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">QUANTITY</h3>
-              <p className="product__textbody para">12000</p>
+              <p className="product__textbody para">
+                {this.state.products.quantity}
+              </p>
             </div>
             <div className="product__categories">
               <h3 className="product__texthead label">CATEGORIES</h3>
               <p className="product__catbody para">
-                Industrial, Automotive, Heavy, Mechanical, Engineering,
-                Transportation, Sales
+                {this.state.products.categories}
               </p>
             </div>
           </div>
