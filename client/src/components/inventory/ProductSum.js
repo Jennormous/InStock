@@ -82,11 +82,7 @@ export default class Product extends Component {
             </div>
           </div>
         </div>
-        <Switch>
-          <Link to="/product/edit">
-            <button className="product__edit">EDIT</button>
-          </Link>
-        </Switch>
+        <button className="product__edit">EDIT</button>
       </div>
     );
   }

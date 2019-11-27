@@ -24,7 +24,7 @@ export default class ProductEdit extends Component {
   render(props) {
     console.log(this.props.match.params.id);
     return (
-      <div className="product__wrapper">
+      <form className="product__wrapper">
         <div className="product__headwrap">
           <img
             className="product__backicon"
@@ -37,39 +37,41 @@ export default class ProductEdit extends Component {
         <button className="product__stock">In Stock</button>
         <div className="product__textcontainer">
           <div className="product__description">
-            <h3 className="product__texthead label">ITEM DESCRIPTION</h3>
-            <p className="product__textbody para">
-              {this.state.products.description}
-            </p>
+            <label className="product__texthead label">ITEM DESCRIPTION</label>
+            <input
+              type="text"
+              className="product__input para"
+              value={this.state.products.description}
+            />
           </div>
           <div className="product__notdescription">
             <div className="product__textwrap">
               <h3 className="product__texthead label">ORDERED BY</h3>
-              <input type="text" className="product__textbody para">
+              <input type="text" className="product__input para">
                 {this.state.products.orderedBy}
               </input>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">REFERENCE NUMBER</h3>
-              <input type="text" className="product__textbody para">
+              <input type="text" className="product__input para">
                 {this.state.products.reference}
               </input>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">LAST ORDERED</h3>
-              <input type="text" className="product__textbody para">
+              <input type="text" className="product__input para">
                 {this.state.products.ordered}
               </input>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">LOCATION</h3>
-              <input type="text" className="product__textbody para">
+              <input type="text" className="product__input para">
                 {this.state.products.location}
               </input>
             </div>
             <div className="product__textwrap">
               <h3 className="product__texthead label">QUANTITY</h3>
-              <input type="text" className="product__textbody para">
+              <input type="text" className="product__input para">
                 {this.state.products.quantity}
               </input>
             </div>
@@ -81,8 +83,8 @@ export default class ProductEdit extends Component {
             </div>
           </div>
         </div>
-        <button className="product__edit">EDIT</button>
-      </div>
+        <button className="product__edit">SAVE</button>
+      </form>
     );
   }
 }

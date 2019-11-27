@@ -220,6 +220,7 @@
   }
 
   &__name {
+    text-decoration: none;
     @include tablet {
       display: contents;
       flex-basis: 14.875rem;
