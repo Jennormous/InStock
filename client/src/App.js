@@ -8,6 +8,7 @@ import Warehouse from "./components/locations/Warehouse";
 import ProductSum from "./components/inventory/ProductSum";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
+import ProductEdit from "./components/inventory/ProductEdit";
 
 export default class App extends Component {
   constructor(props) {
@@ -71,6 +72,13 @@ export default class App extends Component {
             path="/product/:id"
             render={props => (
               <ProductSum data={this.state.products} {...props} />
+            )}
+          />
+
+          <Route
+            path="/product/edit"
+            render={props => (
+              <ProductEdit data={this.state.products} {...props} />
             )}
           />
         </Switch>
