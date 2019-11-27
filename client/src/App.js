@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./styles/main.css";
 import Header from "./components/Header";
-//import Product from "./components/inventory/ProductSum";
 import Inventory from "./components/Inventory";
 import Locations from "./components/Locations";
 import Warehouse from "./components/locations/Warehouse";
@@ -54,6 +53,7 @@ export default class App extends Component {
 
           <Route
             path="/warehouse"
+
             render={props => (
               <Warehouse
                 locations={this.state.locations}
@@ -74,6 +74,7 @@ export default class App extends Component {
             render={props => (
               <ProductEdit data={this.state.products} {...props} />
             )}
+
           />
         </Switch>
       </div>

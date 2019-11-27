@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 
+
 // Define consts for routing
 const Location = require("./model/location.json");
 const Warehouse = require("./model/warehouses.json");
@@ -33,6 +34,7 @@ app.get("/warehouse/:id", (req, res, next) => {
   const WarehouseOut = Warehouse.filter(obj => obj["id"] === req.params.id);
   res.send(JSON.stringify(WarehouseOut));
 });
+
 
 app.listen(PORT, (req, res) => {
   console.log(`Server is listening on PORT ${PORT}`);

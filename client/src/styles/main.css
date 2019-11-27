@@ -913,6 +913,8 @@
           justify-content: space-between;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -962,7 +964,10 @@ p {
 
 .warehouse__contact-info {
   margin-top: 16px;
+
 }
+
+
 
 .modal {
   position: fixed;
@@ -990,7 +995,9 @@ p {
 
 .display-none {
   display: none;
+
 }
+
 
 html,
 body {
