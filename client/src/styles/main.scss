@@ -6,6 +6,12 @@
 @import "./partials/inventory";
 @import "./partials/locations";
 
+@import "./partials/warehouse";
+
+
+@import "./partials/product-modal";
+
+
 html,
 body {
   margin: 0;
@@ -23,5 +29,3 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
-

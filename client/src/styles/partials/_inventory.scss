@@ -1,29 +1,283 @@
 .largetags {
   display: none;
+  @include tablet {
+    display: contents;
+  }
+
+  &__wrapper {
+    display: flex;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+    @include desktop {
+      width: 100%;
+      margin-right: 4px;
+    }
+  }
+
+  &__item {
+    flex-basis: 15.5rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 30%;
+    }
+  }
+
+  &__order {
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 17%;
+    }
+  }
+
+  &__location {
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 17%;
+    }
+  }
+
+  &__quantity {
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 17%;
+    }
+  }
+
+  &__status {
+    width: 7.75rem;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      flex-basis: 17%;
+    }
+  }
+
+  &__dots {
+    @include tablet {
+      align-self: flex-start;
+      margin-top: 2rem;
+    }
+
+    @include desktop-large {
+      align-self: center;
+    }
+  }
+}
+
+.input-modal-btn {
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  top: 85%;
+  left: 75%;
+  background-color: $instock-dark-blue;
+  height: 60px;
+  width: 60px;
+  &--plus {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .inventory {
-  margin: 32px 5%;
+  margin: 0 1rem;
+  @include tablet {
+    margin: 0 1.5rem;
+  }
+  @include desktop {
+    margin: 0 11.25rem;
+  }
   &__top-section {
     display: flex;
     flex-direction: column;
-    &--title {
-      margin-bottom: 16px;
+    @include desktop-large {
+      flex-direction: row;
     }
+    &--title {
+      margin: 2rem 0 1rem 0;
+      @include desktop-large {
+        flex-basis: auto;
+        margin: 3rem 0 3rem 0;
+      }
+    }
+
     &--search {
-      height: 48px;
-      margin-bottom: 8px;
+      height: 3rem;
+      margin-bottom: 2rem;
       border-radius: 4px;
       border: 1px solid $mercury;
       background-color: $alabaster;
       background-image: url("../assets/Icons/SVG/Icon-search.svg");
       background-repeat: no-repeat;
-      background-position: 12px 16px;
-      background-size: 16px;
-      text-indent: 32px;
-      width: -webkit-fill-available;
-      width: fill-available;
-      width: -moz-available;
+      background-position: 0.75rem 1rem;
+      background-size: 1rem;
+      text-indent: 2rem;
+      width: 90%;
+      @include desktop-large {
+        width: 15.75rem;
+        margin: 2.5rem 0 0 0;
+      }
     }
+  }
+  &__inputwrap {
+    margin-left: auto;
+  }
+}
+
+.mobiletags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: solid 2px $mercury;
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 5rem;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-basis: 100%;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__vertdots {
+    margin-left: auto;
+  }
+
+  &__subsec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    @include desktop {
+      flex-wrap: wrap;
+    }
+    &--tag {
+      flex-basis: 100%;
+      margin: 0 0 1rem 0;
+      @include tablet {
+        display: none;
+      }
+      @include desktop {
+        flex-basis: 100%;
+      }
+    }
+    &--value {
+      margin: 0 0 1.5rem 0;
+      @include tablet {
+        flex-basis: 100%;
+        margin-top: 1.8rem;
+      }
+
+      @include desktop {
+        margin: 0;
+        align-self: center;
+      }
+    }
+  }
+}
+
+#product {
+  @include tablet {
+    flex-basis: 14.875rem;
+  }
+
+  @include desktop {
+    flex-basis: 30%;
+  }
+
+  &__name {
+    text-decoration: none;
+    @include tablet {
+      display: contents;
+      flex-basis: 14.875rem;
+    }
+
+    @include desktop {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__description {
+    @include tablet {
+      margin-top: 0;
+    }
+
+    @include desktop {
+      flex-basis: 100%;
+    }
+  }
+}
+
+#lastorder {
+  @include tablet {
+    flex-basis: 7.625rem;
+  }
+
+  @include desktop {
+    flex-basis: 17%;
+  }
+}
+
+#location {
+  @include tablet {
+    flex-basis: 7.5rem;
+  }
+
+  @include desktop {
+    flex-basis: 17%;
+  }
+}
+
+#quantity {
+  @include tablet {
+    flex-basis: 7.5rem;
+  }
+
+  @include desktop {
+    flex-basis: 17%;
+  }
+}
+
+#status {
+  @include tablet {
+    flex-basis: 5.9375rem;
+  }
+
+  @include desktop {
+    flex-basis: 17%;
   }
 }
