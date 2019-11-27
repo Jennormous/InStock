@@ -8,8 +8,8 @@ export default class Header extends Component {
       <header className="header header__wrapper">
         <img className="header__img" src={logo} alt="logo" />
         <ul className="header__list">
-          <Link to="/">
-            <li className="header__list--item active">Inventory</li>{" "}
+          <Link className="header__list--item" to="/">
+            <li>Inventory</li>{" "}
           </Link>
           <Link to="/locations">
             <li className="header__list--item">Locations</li>
